@@ -1,18 +1,20 @@
 {
   "clientes": [
     {
-      "nombre": "ESCACENA",
-      "email": "jesubes@gmail.com",
-      "telefono": "03816426557",
-      "empresa": "Personal",
-      "id": 1
+      "dni": "432829409",
+      "nombre": "claudia",
+      "apellido": "sarmiento",
+      "sexo": "m",
+      "numeroTelefono": "34290133",
+      "id": 3
     },
     {
-      "nombre": "luciana",
-      "email": "psicologa@jasjaj",
-      "telefono": "349475982347",
-      "empresa": "escuela",
-      "id": 2
+      "dni": "388392",
+      "nombre": "Luzmila Maite",
+      "apellido": "Escacena",
+      "sexo": "f",
+      "numeroTelefono": "3920293",
+      "id": 4
     }
   ]
 }

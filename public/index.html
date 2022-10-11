@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM - JSONServer</title>
-    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="../src/css/tailwind.min.css">
 </head>
 <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
@@ -17,9 +17,13 @@
                     class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 bg-teal-700"
                 >Clientes</a>
                 <a 
-                    href="nuevo-cliente.html" 
+                    href="../src/nuevo-cliente.html" 
                     class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400"
                 >Nuevo Cliente</a>
+                <a 
+                href="../src/busqueda-cliente.html" 
+                class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400"
+                >Buscar Cliente</a>
             </nav>
         </aside> <!--sidebar-->
         <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
@@ -36,26 +40,32 @@
                         <thead class="bg-gray-100 ">
                             <tr>
                                 <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
-                                        Nombre Cliente
+                                        DNI
                                 </th>
                                 <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
-                                        Teléfono
+                                        Nombre
                                 </th>
                                 <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
-                                        Empresa
+                                        Apellido
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Sexo
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Número de Teléfono
                                 </th>
                                 <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
                                         Acciones
-                                </th>
+                            </th>
                             </tr>
                         </thead>
                         <tbody id="listado-clientes" class="bg-white"></tbody>
                     </table>
                   </div>
                 </div>
-              </div>
+            </div>
         </main>
     </div>
-    <script src="js/app.js" type="module"></script>
+    <script src="../src/js/index.js" type="module"></script>
 </body>
 </html>

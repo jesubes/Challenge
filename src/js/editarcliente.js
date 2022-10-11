@@ -4,10 +4,11 @@ import { mostrarAlerta, validar } from './funciones.js'
 (function() {
 
     //campos que carga en el formulario
+    const dniInput = document.querySelector('#dni')
     const nombreInput = document.querySelector('#nombre')
-    const emailInput = document.querySelector('#email')
-    const empresaInput = document.querySelector('#empresa')
-    const telefonoInput = document.querySelector('#telefono')
+    const apellidoInput = document.querySelector('#apellido')
+    const sexoInput = document.querySelector('#sexo')
+    const numeroTelefonoInput = document.querySelector('#numeroTelefono')
     const idInput = document.querySelector('#id')
 
 
@@ -29,12 +30,13 @@ import { mostrarAlerta, validar } from './funciones.js'
 
     
     function mostrarCliente(cliente) {
-        const {nombre, empresa, email, telefono, id} = cliente
+        const { dni, nombre, apellido, sexo, numeroTelefono, id} = cliente
 
+        dniInput.value = dni
         nombreInput.value = nombre
-        emailInput.value = email
-        telefonoInput.value = telefono
-        empresaInput.value = empresa
+        apellidoInput.value = apellido
+        sexoInput.value = sexo
+        numeroTelefonoInput.value = numeroTelefono
         idInput.value = id
 
     }
@@ -45,10 +47,11 @@ import { mostrarAlerta, validar } from './funciones.js'
 
 
         const cliente = {
+            dni: dniInput.value,
             nombre: nombreInput.value,
-            email: emailInput.value,
-            telefono: telefonoInput.value,
-            empresa: empresaInput.value,
+            apellido: apellidoInput.value,
+            sexo: sexoInput.value,
+            numeroTelefono: numeroTelefonoInput.value,
             id: parseInt(idInput.value)
         }
 

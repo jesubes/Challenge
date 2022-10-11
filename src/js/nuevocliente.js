@@ -11,16 +11,18 @@ import { nuevoCliente } from './API.js'
     function validarCliente(e){
         e.preventDefault();
 
+        const dni = document.querySelector('#dni').value;
         const nombre = document.querySelector('#nombre').value;
-        const email = document.querySelector('#email').value;
-        const telefono = document.querySelector('#telefono').value;
-        const empresa = document.querySelector('#empresa').value;
+        const apellido = document.querySelector('#apellido').value;
+        const sexo = document.querySelector('#sexo').value;
+        const numeroTelefono = document.querySelector('#numeroTelefono').value;
 
         const cliente = {
+            dni,
             nombre,
-            email,
-            telefono,
-            empresa
+            apellido,
+            sexo,
+            numeroTelefono
         }
 
 

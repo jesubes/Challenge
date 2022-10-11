@@ -13,7 +13,7 @@ export const nuevoCliente = async cliente => {
             }
         });
         
-        window.location.href = 'index.html';
+        window.location.href = '../public/index.html';
 
     } catch (error){
         console.log(error)
@@ -72,7 +72,7 @@ export const editarCliente = async cliente => {
              }
          });
 
-        window.location.href = 'index.html';
+        window.location.href = '../public/index.html';
 
     } catch (error) {
         console.log(error)
