@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM - JSONServer</title>
+    <title>Challenge - Busqueda</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    
     <link rel="stylesheet" href="../src/css/tailwind.min.css">
 </head>
 <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
         <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
-            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">CRM - JSONServer</h1>
-            <p class="mt-10 text-white">Administra tus Clientes con el CRM - JSONServer</p>
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Challenge - Soluciones Digitales</h1>
+            <p class="mt-10 text-white">Administrador de Clientes</p>
             <nav class="mt-8">
                 <a  
                     href="/public/index.html" 
@@ -46,6 +51,7 @@
                                     name="dni"
                                     type="number"
                                     placeholder="DNI Cliente"
+                                    required min="6000000" maxlength="60000000"
                                 />
                             </div>
 
@@ -93,6 +99,9 @@
               </div>
         </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/src/js/busquedacliente.js" type="module"></script>
 </body>
 </html>

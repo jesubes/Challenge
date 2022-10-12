@@ -17,7 +17,7 @@ app.patch('/users/:id', user.update)
 app.delete('/users/:id', user.destory)
 
 
-app.use(express.static('app'))
+app.use(express.static('src'))
 
 
 app.get('/',(req,res)=> {

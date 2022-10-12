@@ -1,5 +1,12 @@
 ##### server con json server
 
+    Ejecutar comando para la DB
+
+``````
+json-server db.json -p 4000
+``````
+
+
 
 ````````````````
  Resources
@@ -7,4 +14,4 @@
 
   Home
   http://localhost:4000
-  ````````````````
+````````````````

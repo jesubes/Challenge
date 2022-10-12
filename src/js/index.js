@@ -53,11 +53,48 @@ import { eliminarCliente, obtenerClientes } from './API.js'
         if(e.target.classList.contains('eliminar')){
             const clienteId = parseInt(e.target.dataset.cliente);
 
-            const confirmar = confirm('Deseas eliminar este registro?');
+            
+            ////////////////////
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                  confirmButton: 'btn btn-success',
+                  cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+              })
+              
+              swalWithBootstrapButtons.fire({
+                title: 'Está seguro?',
+                text: "No podrás revertir esto!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Sí, bórralo!',
+                cancelButtonText: 'No, cancela!',
+                reverseButtons: true
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    
+                    //elimina
+                    eliminarCliente(clienteId)
 
-            if(confirmar) {
-                eliminarCliente(clienteId)
-            }
+                  swalWithBootstrapButtons.fire(
+                    'Eliminado!',
+                    'Su cliente ha sido eliminado.',
+                    'success'
+                  )
+                } else if (
+                  /* Read more about handling dismissals below */
+                  result.dismiss === Swal.DismissReason.cancel
+                ) {
+                  swalWithBootstrapButtons.fire(
+                    'Cancelado',
+                    'Tu cliente está a salvo :)',
+                    'error'
+                  )
+                }
+              })
+
+
 
         }
     }

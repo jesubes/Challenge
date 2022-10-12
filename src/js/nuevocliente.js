@@ -33,8 +33,21 @@ import { nuevoCliente } from './API.js'
             return
         }
         
-        nuevoCliente(cliente);
-        console.log('Si se paso la validacion!!!')
+        // ////////
+         Swal.fire({
+             position: 'center',
+             icon: 'success',
+             title: 'Guardado con Exito!',
+             showConfirmButton: true,
+             timer: 1500
+           })
+
+
+
+         setTimeout(()=>{
+            nuevoCliente(cliente)
+         }, 1500); 
+        
     }
 
 

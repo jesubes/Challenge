@@ -63,7 +63,20 @@ import { mostrarAlerta, validar } from './funciones.js'
             return
         }
 
+
+        // ////////
+        Swal.fire({
+             position: 'center',
+            icon: 'success',
+            title: 'Guardado con Exito!',
+            showConfirmButton: true,
+            timer: 1500
+        })
+
+
         //Reescribe el objeto
-        editarCliente(cliente)
+        setTimeout(()=>{
+            editarCliente(cliente)
+        }, 1400); 
     }
 })();

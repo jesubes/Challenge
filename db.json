@@ -1,20 +1,20 @@
 {
   "clientes": [
     {
-      "dni": "432829409",
-      "nombre": "claudia",
-      "apellido": "sarmiento",
-      "sexo": "m",
-      "numeroTelefono": "34290133",
-      "id": 3
+      "dni": "45367281",
+      "nombre": "Jesus Benjamin",
+      "apellido": "Escacena",
+      "sexo": "F",
+      "numeroTelefono": "+543816426557",
+      "id": 5
     },
     {
-      "dni": "388392",
-      "nombre": "Luzmila Maite",
-      "apellido": "Escacena",
-      "sexo": "f",
-      "numeroTelefono": "3920293",
-      "id": 4
+      "dni": "45234768",
+      "nombre": "Cecilia",
+      "apellido": "Perez",
+      "sexo": "F",
+      "numeroTelefono": "48372908",
+      "id": 6
     }
   ]
 }
